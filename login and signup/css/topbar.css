@@ -1,0 +1,199 @@
+
+body {
+  
+    overflow-x: hidden;
+}
+a,
+a:hover,
+a:focus,
+a:active {
+    color: inherit;
+    outline: none;
+    -webkit-text-decoration: none;
+    -moz-text-decoration: none;
+    -ms-text-decoration: none;
+    -o-text-decoration: none;
+    text-decoration: none;
+}
+.topbar {
+    background: #fff;
+    display: block;
+    height: 50px;
+    padding: 0 48px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    z-index: 99;
+    position: relative;
+   
+}
+
+.logo {
+    display: inline-block;
+    vertical-align: inherit;
+    width: 15%;
+    position: relative;
+    z-index: 10;
+}
+
+.topbar > form {
+    display: inline-block;
+    vertical-align: sub;
+    width: 26%;
+    position: relative;
+}
+
+.top-area {
+    display: inline-block;
+    text-align: right;
+    vertical-align: middle;
+    width: 84%;
+}
+
+.top-area > ul {
+    display: inline-block;
+    list-style: outside none none;
+    margin-bottom: 0;
+    padding-left: 0;
+    vertical-align: middle;
+}
+
+.top-area > ul > li {
+    display: inline-block;
+    margin-right: 25px;
+    position: relative;
+    vertical-align: top;
+    z-index: 2;
+}
+
+.top-area > ul > li > a {
+    color: #999;
+}
+
+.top-area .user-img {
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    line-height: 60px;
+}
+
+.top-area .user-img > span.status {
+    bottom: 10px;
+    right: 5px;
+}
+
+.top-area > span.main-menu {
+    cursor: pointer;
+    display: inline-block;
+    font-size: 20px;
+    margin-left: 20px;
+    margin-right: -10px;
+    vertical-align: inherit;
+}
+
+.top-area .user-img > img {
+    border-radius: 50%;
+    display: inline-block;
+    transform: scale(0.7);
+    vertical-align: inherit;
+}
+.form-search:before {
+    position: absolute;
+  content: '';
+  height: 20px;
+  width: 20px;
+  border:1px solid;
+  right: 14px;
+  top: -10px;
+  transform: rotate(45deg);
+  z-index: -1;
+  background:#F6F6F6;
+}
+.user-setting.active:before{
+  position: absolute;
+  content: '';
+  height: 20px;
+  width: 20px;
+  border:1px solid;
+  right: 20px;
+  top: -9px;
+  transform: rotate(45deg);
+  z-index: -1;
+  background:#F6F6F6;
+}
+
+.form-search {
+    position: absolute;
+    right: -15px;
+    top: 42px;
+    width: 300px;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.searched.active .form-search {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+.form-search input {
+    border-style: none none solid;
+    border-width: medium medium 1px;
+    color: #999999;
+    font-size: 15px;
+    padding: 9px 18px;
+    width: 100%;
+}
+
+.form-search button {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border: medium none;
+    color: #999;
+    position: absolute;
+    right: 5px;
+    top: 9px;
+}
+
+.top-area > ul > li > a > span {
+    bottom: -10px;
+    font-size: 11px;
+    position: absolute;
+    right: -4px;
+}
+
+
+
+.user-setting {
+    background: #fff none repeat scroll 0 0;
+    border-radius: 0 0 3px 3px;
+    position: absolute;
+    left: -103px;
+    text-align: left;
+    top: 105%;
+    width: 150px;
+    opacity: 0;
+    visibility: hidden;
+    line-height: initial;
+    border: 1px solid #e1e8ed;
+}
+
+.user-setting.active {
+    opacity: 1;
+    visibility: visible;
+	
+}
+    .user-setting a:hover {
+        color: #007bff !important;
+    }
+.user-setting > a {
+    display: inline-block;
+    font-size: 13px;
+    padding: 10px 15px;
+    text-transform: capitalize;
+    width: 100%;
+    background: #fafafa;
+    position: relative;
+}
+    .user-setting .status {
+        right: 20px;
+    }
